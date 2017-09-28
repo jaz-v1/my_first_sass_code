@@ -1,54 +1,49 @@
-    section1-career {
-        float: left;
-    }
-    
-    section2-career,
-    section3-career {
-        background: #F7F7F7;
+.section1-career {
+    width: 90%;
+}
+
+.section2-career,
+{
+    display: inline-block;
+    article {
+        background: white;
         border: 1px solid BLACK;
         padding: 20px;
-        margin-bottom: 15px;
-        margin-TOP: 5px;
-        margin-RIGHT: 30px;
-        margin-left: 30px;
+        margin: 10px;
         text-align: center;
-        border-radius: 25px;
+        border-radius: $margin + 3%;
     }
-    
-    .article {
-        background: #F7F7F7;
-        border: 1px solid BLACK;
+}
+
+.section3-career {
+    @extend .section2-career;
+    width: 65%;
+}
+
+.aside-career {
+    display: inline-block;
+    width: 30%;
+    padding: 23px;
+    background: #F7F7F7;
+    border-radius: 25px;
+    .image1-career {
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
         padding: 20px;
-        margin: 30 30px;
-        width: 600px;
-        text-align: left;
-        border-radius: 25px;
+        margin-left: 49px;
+        margin-top: 53px;
+        margin-bottom: -9px;
     }
-    
-    aside-career {
-        float: LEFT;
-        width: 225px;
-        margin: 15px 30px;
-        padding: 15px;
-        background: #F7F7F7;
-        border-radius: 25px;
+    .image2-career {
+        @extend .image1-career;
     }
-    
-    aside-career img {
-        Float: Center;
-        width: 150px;
-        height: 85px;
-        border-radius: 25px;
-        margin-bottom: 75px;
-        margin-top: 115px;
-        margin-left: 35px;
-    }
-    
-    #section4-career .iframe {
-        margin-left: 175px;
-        margin-Bottom: 30px;
-        margin-top: 15px;
-        width: 640px;
-        height: 360px;
-        border: 0px;
-    }
+}
+
+.section4-career {
+    margin-left: 40%;
+    margin-Bottom: 30px;
+    margin-top: 15px;
+    width: 640px;
+    border: 0px;
+}
