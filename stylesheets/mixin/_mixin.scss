@@ -1,0 +1,12 @@
+// @mixin allows the use of attributes in various classes with use of @include vendor prfixing
+@mixin border-radius($radius:10px) {
+    -web-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition ($position, $time, $type) {
+    -webkit-transition: $position $time $type;
+    -moz-transition: $position $time $type;
+    transition: $position $time $type;
+}

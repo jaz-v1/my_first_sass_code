@@ -1,0 +1,32 @@
+html {
+    background: #262626;
+    font-family: helvetica, ariel, sans-serif;
+}
+
+body {
+    @extend html;
+    padding: 1%;
+}
+
+header {
+    h1 {
+        color: $blue;
+    }
+    h2 {
+        color: $blue;
+        margin: 5px $margin + 1%;
+    }
+}
+
+p {
+    margin: 10px, $margin;
+}
+
+a {
+    color: $blue - 100;
+}
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+}

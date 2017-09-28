@@ -1,0 +1,71 @@
+@charset 'utf-8';
+@import '_variables';
+@import '_placeholder';
+@import 'mixin/_mixin';
+@import 'partials/_all';
+.grad {
+    @include border-radius;
+    padding: 3%;
+    background-color: $cream;
+    background-image: -webkit-gradient (linear, left top, left bottom from($cream), to($cream2));
+    background-image: -webkit-linear-gradient (top, $cream, $cream2);
+    background-image: -moz-linear-gradient (top, $cream, $cream2);
+    background-image: -ms-linear-gradient (top, $cream, $cream2);
+    background-image: -o-linear-gradient (top, $cream, $cream2);
+    // @inclue allows to use a mixin
+    .intro {
+        @include border-radius;
+        background: #353232;
+        color: #FCFCFC;
+        display: inline-block;
+        padding: 1%;
+        width: round(percentage(525px / 1440px));
+    }
+    // @extend is a function that will extend the attributes of a class code
+    .feature {
+        @extend .intro;
+        width: round(percentage(840px / 1440px));
+        //border: 1px solid blue;
+    }
+    //following code is for the url attributes
+    /* .one {
+            color: $blue + 100;
+            a {
+                font-size: 20px;
+                background: $cream;
+                @include border-radius(10px);
+            }
+            a:hover {
+                background: $cream - 100;
+            }
+        }*/
+    // @each can allow us to repeat the attribute value to the valiable array set
+    // here @each is used with {nth}
+    @each $p in(one red, two red+20, ) {
+        .#{nth($p,1)} {
+            background: #{nth($p,2)};
+        }
+    }
+}
+
+footer {
+    // here a varriable has a array value set to it 
+    // and @each repeats the secong varriable $social set for images in the $icon link Varriable
+    $icons: (twitter, facebook, youtube, rss);
+    @each $social in $icons {
+        .#{$social} {
+            background:url('../images/#{$social}.png') no-repeat;
+        }
+    }
+    .social-links li {
+        list-style: none;
+        display: inline-block;
+        a {
+            padding: 0.5%;
+            display: inline-block;
+            width: 65px;
+            height: 65px;
+            text-indent: -999px;
+        }
+    }
+}
