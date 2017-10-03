@@ -1,9 +1,10 @@
-.section1-career {
+.section1-career,
+{
     width: 90%;
 }
 
 .section2-career,
-{
+.section1-education {
     display: inline-block;
     article {
         background: white;
@@ -15,12 +16,14 @@
     }
 }
 
-.section3-career {
+.section3-career,
+.section1-education {
     @extend .section2-career;
     width: 65%;
 }
 
-.aside-career {
+.aside-career,
+.aside-education {
     display: inline-block;
     width: 30%;
     padding: 23px;
@@ -37,6 +40,17 @@
     }
     .image2-career {
         @extend .image1-career;
+    }
+    .image1-education,
+    .image2-education,
+    .image3-education,
+    .image4-education,
+    {
+        width: 200px;
+        height: 90px;
+        border-radius: 25px;
+        padding: 20px;
+        margin-left: 49px;
     }
 }
 

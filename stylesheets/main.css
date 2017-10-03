@@ -79,9 +79,13 @@ nav {
 .section1-career {
   width: 90%; }
 
-.section2-career, .section3-career {
+.section2-career, .section3-career,
+.section1-education,
+.section1-education {
   display: inline-block; }
-  .section2-career article, .section3-career article {
+  .section2-career article, .section3-career article,
+  .section1-education article,
+  .section1-education article {
     background: white;
     border: 1px solid BLACK;
     padding: 20px;
@@ -89,16 +93,20 @@ nav {
     text-align: center;
     border-radius: 4%; }
 
-.section3-career {
+.section3-career,
+.section1-education {
   width: 65%; }
 
-.aside-career {
+.aside-career,
+.aside-education {
   display: inline-block;
   width: 30%;
   padding: 23px;
   background: #F7F7F7;
   border-radius: 25px; }
-  .aside-career .image1-career, .aside-career .image2-career {
+  .aside-career .image1-career, .aside-career .image2-career,
+  .aside-education .image1-career,
+  .aside-education .image2-career {
     width: 200px;
     height: 200px;
     border-radius: 25px;
@@ -106,6 +114,19 @@ nav {
     margin-left: 49px;
     margin-top: 53px;
     margin-bottom: -9px; }
+  .aside-career .image1-education,
+  .aside-career .image2-education,
+  .aside-career .image3-education,
+  .aside-career .image4-education,
+  .aside-education .image1-education,
+  .aside-education .image2-education,
+  .aside-education .image3-education,
+  .aside-education .image4-education {
+    width: 200px;
+    height: 90px;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 49px; }
 
 .section4-career {
   margin-left: 40%;

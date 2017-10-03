@@ -1,102 +1,95 @@
-<! Doctype html>
-<HTML lang = "en">
-<HEAD>
-	<meta charset = "utf-8" />
-	<title> Jagjit's Website </title>
-	<link rel = "stylesheet" href="css/main.css">
+<!doctype html>
+<html class="no-js" lang="en">
 
-</HEAD>
-<BODY>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>learning sass</title>
+    <meta name="viewport" content="width=device-width">
 
-	<div id = "big_wrapper">
-	<header id = "top_header">
-	
-	<section id = "logo">
-		
-			<img src="Media_Images/2934879.png">
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SASS is Nice</h1>
+        <h2>Education</h2>
+
+    </header>
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">Logo</a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Know More</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="#!">Graphic Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">At Chromatrix</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </section>
-	<aside id = "title">
-			<h1> Jagjit Singh </h1>
-    </aside>
-		
-	</header>
-			<nav id = "main_menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutme.html">About Me</a></li>
-				<li><a href="education.html">Education</a>
-				<li><a href="career.html">Career</a>
-					<ul><li><a href="sys_admin.html">System Administrator</a></li></ul>
-				</li>
-				<li><a href="FAQ.html">FAQ</a></li>
-				<li><a href= "#">Galleries</a>
-					<ul>
-					<li><a href="gallery_personal.html">Gallery Personal</a></li>
-					<li><a href="gallery_design.html">Gallery Design</a></li>
-					</ul>
-				</li>
-			</ul>	
-		</nav>
-		<section id = "section1">
-		
-			<p><h3>Education</h3></p>
-		</section>
-		
-		
-		<section id = "Sec2">
-			<article>
-				<p>A Member of a family with high education background. Unable to complete my education in the past. Seek this opportunity to
-					complete my degree. Thus currently studying with Federation University Australia, completing Bachelors of Information Technology, 
-				
-				</p>
-			</article>
-		
-		</section>
-		
-		<section id = "Sec3">
-			<article>
-				<p><h4>Smt. Mithibhai Motiram Kundanani College of Commerce and Economics. 2001-2004</h4></p> 
-				
-				<p>Higher Secondary Certificate H.S.C (12th)
-   
-				</p>
-			</article>
-			<article>
-				<p><h4>IIHT Institute of Hardware and Networking, Mumbai. 2004-2007 </h4></p> 
-				
-				<p>Associate Diploma in Computer Systems Networking  & 
-				Telecommunication, along with Professional Certifications in MCP, Messaging:MCSA & CWNA.
-				</p>
-			</article>
-			<article>
-				<p><h4>Australian Technical & Management College, Melbourne. 2014-2014 </h4></p> 
-				
-				<p>Diploma in Information Technology
-				</p>
-			</article>
-			<article>
-				<p><h4>Federation University. Melbourne, Australia. 2014-2016 </h4></p> 
-				
-				<p>Currently pursuing with Bachelors in Information Technology
-				</p>
-			</article>
-		</section>
-		<aside id = "Sec3_aside">
-			<img src="Media_Images/mmklogo.jpg">
-			<img src="Media_Images/MCSA_logo.png">
-			<img src="Media_Images/atmc_logo.jpg">
-			<img src="Media_Images/fed_uni.jpg">
-		</aside>
-		<footer id = "main_footer">
-		<ul>
-				<li><a href="site_map.html">Site Map</a></li>
-				<li><a href="https://www.facebook.com/jagjit.s.saluja">Facebook</a></li>
-				<li><a href="http://au.linkedin.com/in/jagjitsaluja">Linkedin</a></li>
-				
-		</ul>
-			Copyright Jagjit Singh's website 2015
-		</footer>
-		</div>
-</BODY>
+    <div role="paras" class="grad">
+        <section class="section1-education">
+            <article>
+                <p>
+                    <h4>Smt. Mithibhai Motiram Kundanani College of Commerce and Economics. 2001-2004</h4>
+                </p>
+                <p>Higher Secondary Certificate H.S.C (12th)
+                </p>
+            </article>
+            <article>
+                <p>
+                    <h4>IIHT Institute of Hardware and Networking, Mumbai. 2004-2007 </h4>
+                </p>
 
-</HTML>
+                <p>Associate Diploma in Computer Systems Networking & Telecommunication, along with Professional Certifications in MCP, Messaging:MCSA & CWNA.
+                </p>
+            </article>
+            <article>
+                <p>
+                    <h4>Australian Technical & Management College, Melbourne. 2014-2014 </h4>
+                </p>
+
+                <p>Diploma in Information Technology
+                </p>
+            </article>
+            <article>
+                <p>
+                    <h4>Federation University. Melbourne, Australia. 2014-2016 </h4>
+                </p>
+
+                <p>Bachelors in Information Technology
+                </p>
+            </article>
+        </section>
+        <aside class="aside-education">
+            <img class="image1-education" src="images/mmklogo.jpg">
+            <img class="image2-education" src="images/MCSA_logo.png">
+            <img class="image3-education" src="images/atmc_logo.jpg">
+            <img class="image4-education" src="images/fed_uni.jpg">
+        </aside>
+    </div>
+    <footer class="main_footer">
+        <ul class="social-links">
+            <li><a class="twitter" href="#">Twitter</a></li>
+            <li><a class="facebook" href="#">Facebook</a></li>
+            <li><a class="youtube" href="#">Youtube</a></li>
+            <li><a class="rss" href="#">RSS</a></li>
+        </ul>
+        Copyright Jagjit Singh's website 2017
+    </footer>
+</body>
+
+</html>
